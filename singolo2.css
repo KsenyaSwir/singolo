@@ -1,0 +1,253 @@
+html, body {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.header {
+  width: 1020px;
+  background: #2d303a;
+  font-family: "Lato";
+  text-align: left;
+  padding-bottom: 1px;
+}
+
+.header h1 {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  padding-left: 41px;
+  padding-top: 67px;
+  letter-spacing: 0.4px;
+  margin-top: 0px;
+}
+
+.header p {
+  width: 940px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-weight: 300;
+  padding-top: 6px;
+  padding-left: 4%;
+  letter-spacing: -0.23px;
+  padding-bottom: 0px;
+  margin-bottom: 12px;
+}
+
+.header nav {
+  font-family: "Lato";
+  font-size: 11px;
+  color: #767e9e;
+  padding-right: 27px;
+}
+
+.header nav ul li {
+  font-size: 13px;
+  display: inline-block;
+  padding: 0 5px;
+  border-radius: 15%;
+  border: 1px solid #666d89;
+  margin-left: 3px;
+  margin-right: 4px;
+  padding-bottom: 2px;
+}
+
+.header nav ul li:hover {
+  color: #cc4a4a;
+}
+
+.header nav ul li a:hover {
+  color: #c92f2f;
+}
+
+.header nav ul li a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #767e9e;
+  text-decoration: none;
+}
+
+.portfolio {
+  width: 1020px;
+  background-color: #2d303a;
+  border-bottom: 5px solid #323746;
+}
+
+.portfolio img {
+  width: 220px;
+  height: 185px;
+}
+
+.portfolio .image_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (220px)[4];
+      grid-template-columns: repeat(4, 220px);
+  -ms-grid-rows: 185px 185px 185px 50px;
+      grid-template-rows: 185px 185px 185px 50px;
+  gap: 20px;
+  grid-row-gap: 23px;
+  margin-left: 41px;
+  padding-top: 9px;
+  overflow: hidden;
+  max-height: 670px;
+}
+
+.portfolio .image_grid .img_1 {
+  background-image: url("assets/Project1.png");
+  background-position: 36% 22%;
+}
+
+.portfolio .image_grid .img_2 {
+  background-image: url("assets/Project2.png");
+  background-position: 57% 50%;
+}
+
+.portfolio .img_3 {
+  background-image: url("assets/Layer3.png");
+  background-position: 36% 2%;
+}
+
+.portfolio .img_4 {
+  background-image: url("assets/Project4.png");
+  background-position: 55% 22%;
+}
+
+.portfolio .img_5 {
+  background-image: url("assets/Project5.png");
+  background-position: 41% 18%;
+}
+
+.portfolio .img_6 {
+  background-image: url("assets/Project6.png");
+  background-position: 42% 43%;
+}
+
+.portfolio .img_7 {
+  background-image: url("assets/Layer7.png");
+  background-position: 20% 22%;
+}
+
+.portfolio .img_8 {
+  background-image: url("assets/Layer8.png");
+  background-position: 42% 36%;
+}
+
+.img_9 {
+  background-image: url("assets/Project9.png");
+  background-position: 48% 56%;
+}
+
+.img_10 {
+  background-image: url("assets/Project10.png");
+  background-position: 56% 24%;
+}
+
+.img_11 {
+  background-image: url("assets/Project11.png");
+  background-position: 74% 78%;
+}
+
+.img_12 {
+  background-image: url("assets/Project12.png");
+  background-position: 49% 26%;
+}
+
+.clear {
+  clear: both;
+}
+
+.about_us {
+  padding-bottom: 80px;
+  width: 979px;
+  background-color: #f2f2f2;
+  padding-top: 68px;
+  padding-left: 42px;
+  border-bottom: 5px solid #ffffff;
+}
+
+.about_us h2 {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  margin-top: 0;
+  letter-spacing: 0.3px;
+}
+
+.about_us p {
+  width: 940px;
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  font-size: 18px;
+}
+
+.about_us_greed {
+  font-family: "Lato";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (299px)[3];
+      grid-template-columns: repeat(3, 299px);
+  -ms-grid-rows: 303px 127px;
+      grid-template-rows: 303px 127px;
+  grid-column-gap: 20px;
+  margin-top: 50px;
+}
+
+.about_us_greed img {
+  width: 300px;
+}
+
+.about_us_greed h3 {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+  margin-bottom: 9px;
+}
+
+.about_us_greed p {
+  margin-top: 9px;
+  width: 300px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.about_us_greed .person_1 {
+  margin-top: -4px;
+}
+
+.about_us_greed .person_1 .social_net {
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.about_us_greed .person_1 .social_net img {
+  width: 34px;
+}
+
+.about_us_greed .person_1 .social_net img:last-child {
+  padding-left: 5px;
+}
+
+.about_us_greed .person_1 .social_net img:nth-child(3) {
+  padding-left: 4px;
+}
+
+.about_us_greed .person_1 .social_net img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=singolo2.css.map */
