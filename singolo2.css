@@ -3,7 +3,7 @@ html, body {
   margin-left: 0;
 }
 
-.header {
+.portfolio_block {
   width: 1020px;
   background: #2d303a;
   font-family: "Lato";
@@ -11,7 +11,7 @@ html, body {
   padding-bottom: 1px;
 }
 
-.header h1 {
+.portfolio_block h1 {
   font-size: 30px;
   line-height: 18px;
   color: #666d89;
@@ -23,7 +23,7 @@ html, body {
   margin-top: 0px;
 }
 
-.header p {
+.portfolio_block p {
   width: 940px;
   font-size: 18px;
   line-height: 30px;
@@ -36,14 +36,14 @@ html, body {
   margin-bottom: 12px;
 }
 
-.header nav {
+.portfolio_block nav {
   font-family: "Lato";
   font-size: 11px;
   color: #767e9e;
   padding-right: 27px;
 }
 
-.header nav ul li {
+.portfolio_block nav ul li {
   font-size: 13px;
   display: inline-block;
   padding: 0 5px;
@@ -54,15 +54,15 @@ html, body {
   padding-bottom: 2px;
 }
 
-.header nav ul li:hover {
+.portfolio_block nav ul li:hover {
   color: #cc4a4a;
 }
 
-.header nav ul li a:hover {
+.portfolio_block nav ul li a:hover {
   color: #c92f2f;
 }
 
-.header nav ul li a {
+.portfolio_block nav ul li a {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   color: #767e9e;
