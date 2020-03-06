@@ -1,0 +1,199 @@
+body{
+    width: 1020px;
+    margin: 0;
+    .main_content{
+        background-color: #f06c64;
+        color: #f0d8d9;
+        padding-bottom: 65px;
+        border-bottom: 5px solid #ea676b;
+        font-family: "Lato";
+        padding-top: 36px;
+        padding-left: 41px;
+
+        h3{
+            margin-top: 33px;
+        }
+        
+    }
+
+    .footer{
+        background-color: #2d303a;
+        height: 80px;
+
+        .footer_txt {
+            color: #5b6179;
+            padding-top: 31px;
+            padding-left: 41px;
+            font-size: 13px;
+            width:300px;
+            float: left;
+        }
+        .social_net{
+            float: right;
+            margin-top: 21px;
+            width: 193px;
+
+            img:nth-child(2){
+                margin-left: 2px;
+            }
+
+            img:nth-child(3){
+                margin-left: 2px;
+            }
+
+            img:nth-child(4){
+                margin-left: 2px;
+            }
+        }
+
+        .social_net img:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+    .text_blank{
+        width: 1020px;
+    }
+    h3{
+        font-size: 30px;
+        line-height: 18px;
+        font-weight: 900;
+        text-align: left;
+        margin-bottom: 27px;
+        
+    }
+    p{
+        width: 940px;
+        height: 62px;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 300;
+        letter-spacing: -0.1px;
+    }
+  
+}
+
+
+.contact_info{
+    display: grid;
+    grid-template-columns: 620px 310px;
+    font-size: 12px;
+    margin-top: 43px;
+    
+    .contact_text{
+        h2{
+            margin-top: 0;
+            padding-left: 20px;
+            letter-spacing: 0.18px; 
+            margin-bottom: 0px;       
+        }
+        p{
+            width: 300px;
+           
+            font-size: 12px;
+            line-height: 22px;
+            color: #f0d8d9;
+            font-family: "Lato";
+            font-weight: 400;
+            margin-top: 7px;
+            margin-left: 19px;
+            letter-spacing: -0.1px;
+        }
+    }
+
+    input{
+        border: none;
+        margin-bottom: 15px;
+        
+        width: 603px;
+        height: 37px;
+        border-radius: 5px;
+        background-color: #d6564f;
+        line-height: 22px;
+        color: #f48c8f;
+        font-family: "Lato";
+        font-weight: 400;
+        text-align: left;     
+        
+    }
+    form{
+        position: relative;
+        button{
+            position: absolute;
+            top: 320px;
+            left: 647px;
+            color: rgb(214, 212, 212); /* цвет текста */
+            text-decoration: none; /* убирать подчёркивание у ссылок */
+            user-select: none; /* убирать выделение текста */
+            background: rgb(228, 79, 79); /* фон кнопки */
+            padding: .7em 1.5em; /* отступ от текста */
+            border: 1px solid rgba(185, 42, 42, 0.6); /* убирать контур в Mozilla */
+            }
+        button:hover{
+            background: rgb(160, 36, 36);
+        }
+    }
+    input:hover{
+        cursor: pointer;
+    }
+    input[value]{
+        padding-left: 14px;
+        font-size: 12px;
+        letter-spacing: 0.1px;
+    }
+  
+    textarea{
+        border: none;
+        width: 605px;
+        height: 198px;
+        border-radius: 5px;
+        background-color: #d6564f;
+        line-height: 22px;
+        color: #f48c8f;
+        font-family: "Lato";
+        font-weight: 400;
+        text-align: left;
+        resize: none; 
+        
+    }
+    textarea[placeholder]{
+        padding-left: 10px;
+        color: #f48c8f;
+    }
+
+    .contact_info_items{
+        display: grid;
+        grid-template-rows: 20px 20px 20px;
+        margin-top: 50px;
+        margin-left: 20px;
+
+        .location{
+            margin-left: 2px;
+        }
+        img{
+            float: left;
+        }
+
+        .mail img{
+            padding-top: 7px;
+        }
+        .mail{
+            .txt{
+                margin-top: 2px;
+                margin-left: 22px;
+            }
+        }
+        .txt{
+        margin-left: 20px;
+        }
+
+        .telephone{
+            img{
+                margin-top: 2px;
+            }
+            .txt{
+                margin-left: 22px;
+            }
+        }
+    }
+}
