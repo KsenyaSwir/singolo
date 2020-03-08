@@ -33,7 +33,7 @@ html, body {
   padding-left: 4%;
   letter-spacing: -0.23px;
   padding-bottom: 0px;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
 }
 
 .portfolio_block nav {
@@ -69,6 +69,10 @@ html, body {
   text-decoration: none;
 }
 
+.portfolio_block p {
+  margin-bottom: -30px;
+}
+
 .portfolio {
   width: 1020px;
   background-color: #2d303a;
@@ -92,7 +96,7 @@ html, body {
   margin-left: 41px;
   padding-top: 9px;
   overflow: hidden;
-  max-height: 670px;
+  max-height: 667px;
 }
 
 .portfolio .image_grid .img_1 {
@@ -155,10 +159,6 @@ html, body {
   background-position: 49% 26%;
 }
 
-.clear {
-  clear: both;
-}
-
 .about_us {
   padding-bottom: 80px;
   width: 979px;
@@ -188,6 +188,7 @@ html, body {
   font-weight: 300;
   letter-spacing: -0.1px;
   font-size: 18px;
+  margin-top: 28px;
 }
 
 .about_us_greed {

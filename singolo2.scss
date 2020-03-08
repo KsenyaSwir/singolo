@@ -3,6 +3,7 @@ html, body{
     margin-top: 0;
     margin-left: 0;
 }
+
 .portfolio_block{
     width: 1020px;
     background: rgb(45, 48, 58);
@@ -31,7 +32,7 @@ html, body{
         padding-left: 4%;
         letter-spacing: -0.23px;
         padding-bottom: 0px;
-        margin-bottom: 12px;
+        margin-bottom: 30px;
     }
 
     nav {
@@ -70,6 +71,9 @@ html, body{
         }
     }
 }
+.portfolio_block p{
+    margin-bottom: -30px;
+}
 
 .portfolio{
     width: 1020px;
@@ -89,7 +93,7 @@ html, body{
         margin-left: 41px;
         padding-top: 9px;
         overflow: hidden;
-        max-height: 670px;
+        max-height: 667px;
        
         .img_1{
             background-image: url('assets/Project1.png');
@@ -143,10 +147,6 @@ html, body{
         }
 
 
-.clear{
-    clear: both;
-}
-
 .about_us{
     padding-bottom: 80px;
     width: 979px;
@@ -173,6 +173,7 @@ html, body{
     font-weight: 300;
     letter-spacing: -0.1px;
     font-size: 18px;
+    margin-top: 28px;
     }
 }
 

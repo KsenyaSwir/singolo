@@ -34,7 +34,7 @@ html, body {
   padding-left: 4%;
   letter-spacing: -0.23px;
   padding-bottom: 0px;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
 }
 
 .portfolio_block nav {
@@ -70,6 +70,10 @@ html, body {
   text-decoration: none;
 }
 
+.portfolio_block p {
+  margin-bottom: -30px;
+}
+
 .portfolio {
   width: 1020px;
   background-color: #2d303a;
@@ -93,7 +97,7 @@ html, body {
   margin-left: 41px;
   padding-top: 9px;
   overflow: hidden;
-  max-height: 670px;
+  max-height: 667px;
 }
 
 .portfolio .image_grid .img_1 {
@@ -156,10 +160,6 @@ html, body {
   background-position: 49% 26%;
 }
 
-.clear {
-  clear: both;
-}
-
 .about_us {
   padding-bottom: 80px;
   width: 979px;
@@ -189,6 +189,7 @@ html, body {
   font-weight: 300;
   letter-spacing: -0.1px;
   font-size: 18px;
+  margin-top: 28px;
 }
 
 .about_us_greed {
@@ -336,7 +337,7 @@ body p {
   -ms-grid-columns: 620px 310px;
       grid-template-columns: 620px 310px;
   font-size: 12px;
-  margin-top: 43px;
+  margin-top: 39px;
 }
 
 .contact_info .contact_text h2 {
@@ -518,7 +519,7 @@ body p {
 }
 
 .header nav {
-  margin-top: 5px;
+  margin-top: 8px;
   padding: 10px;
   font-size: 11px;
   color: #f06c64;
@@ -603,6 +604,7 @@ body p {
   height: 495px;
   background-color: #f2f2f2;
   padding-top: 1px;
+  border-bottom: 5px solid white;
 }
 
 .services .services_text {
@@ -630,8 +632,8 @@ body p {
   display: grid;
   -ms-grid-columns: 315px 323px 315px;
       grid-template-columns: 315px 323px 315px;
-  -ms-grid-rows: (130px)[3];
-      grid-template-rows: repeat(3, 130px);
+  -ms-grid-rows: (124px)[2];
+      grid-template-rows: repeat(2, 124px);
   padding-left: 4%;
   letter-spacing: -1px;
   font-size: 16px;
@@ -640,6 +642,8 @@ body p {
 }
 
 .services .services_grid h3 {
+  margin-top: 20px;
+  font-size: 18px;
   margin-bottom: 12px;
   letter-spacing: 0;
 }

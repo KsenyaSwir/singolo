@@ -125,7 +125,7 @@
     background-color: 
     #f2f2f2;
     padding-top: 1px;
-
+    border-bottom: 5px solid white;
     .services_text{
         font-size: 18px;
         line-height: 18px;
@@ -149,14 +149,15 @@
     .services_grid{
         display: grid;
         grid-template-columns: 315px 323px 315px;
-        grid-template-rows: repeat(3, 130px);
+        grid-template-rows: repeat(2, 124px);
         padding-left: 4%;
         letter-spacing: -1px;
         font-size: 16px;
         color: #666d89;
         font-family: "Lato";
 
-        h3{
+        .custom_design_service{
+            font-size: 16px;
             margin-bottom: 12px;
             letter-spacing: 0;
         }

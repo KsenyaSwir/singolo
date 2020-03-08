@@ -133,6 +133,7 @@
   height: 495px;
   background-color: #f2f2f2;
   padding-top: 1px;
+  border-bottom: 5px solid white;
 }
 
 .services .services_text {
@@ -160,8 +161,8 @@
   display: grid;
   -ms-grid-columns: 315px 323px 315px;
       grid-template-columns: 315px 323px 315px;
-  -ms-grid-rows: (130px)[3];
-      grid-template-rows: repeat(3, 130px);
+  -ms-grid-rows: (124px)[2];
+      grid-template-rows: repeat(2, 124px);
   padding-left: 4%;
   letter-spacing: -1px;
   font-size: 16px;
@@ -169,7 +170,8 @@
   font-family: "Lato";
 }
 
-.services .services_grid h3 {
+.services .services_grid .custom_design_service {
+  font-size: 16px;
   margin-bottom: 12px;
   letter-spacing: 0;
 }
