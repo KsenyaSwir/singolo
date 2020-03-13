@@ -192,6 +192,11 @@ body p {
   margin-left: 20px;
 }
 
+.contact_info .contact_info_items a {
+  text-decoration: none;
+  color: #d6d4d4;
+}
+
 .contact_info .contact_info_items .location {
   margin-left: 2px;
 }

@@ -52,16 +52,24 @@
     ul li {
         display: inline-block;
         padding: 0 15px;
+        padding-top: 2px;
+        padding-right: 14px;
+        letter-spacing: 0.3px;
     }
 
-    ul li:hover{
-        color:rgb(204, 74, 74);
-    }
-
-    ul li a:hover{
+    li.active{
         color:rgb(201, 47, 47);
     }
 
+    li a:not(.active):hover{
+        cursor: pointer;
+        color:rgb(207, 113, 113);
+    }
+/*
+    ul li a:hover{
+        color:rgb(201, 47, 47);
+    }
+*/
     ul li a {
         -webkit-transition: all 0.3s ease 0s;
         transition: all 0.3s ease 0s;
@@ -140,15 +148,22 @@
         margin: 0 4% 0 4%;
         letter-spacing: 0px;
         line-height: 30px;
+      
 
         .text{
             color: #767e9e;
             text-align: justify;
+<<<<<<< HEAD
+=======
+            margin-bottom: 22px;
+>>>>>>> master
         }
     }
   
     .services_text h2{
-        letter-spacing: 2px;
+        letter-spacing: 1.8px;
+        margin-bottom: 20px;
+
     }
 
     .services_grid{
@@ -191,6 +206,10 @@
            font-size: 14px;
            line-height: 20px;
            text-align: justify;
+<<<<<<< HEAD
+=======
+           overflow: hidden;
+>>>>>>> master
         }
 
         .idea{

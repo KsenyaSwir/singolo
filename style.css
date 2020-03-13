@@ -160,6 +160,10 @@ html, body {
   background-position: 49% 26%;
 }
 
+.image_grid > :nth-child(13) {
+  display: none;
+}
+
 .about_us {
   padding-bottom: 80px;
   width: 979px;
@@ -231,6 +235,10 @@ html, body {
 .about_us_greed .person_1 {
   margin-top: -4px;
   text-align: justify;
+}
+
+.about_us_greed .person_1 h3 {
+  overflow: hidden;
 }
 
 .about_us_greed .person_1 .social_net {
@@ -448,6 +456,11 @@ body p {
   margin-left: 20px;
 }
 
+.contact_info .contact_info_items a {
+  text-decoration: none;
+  color: #d6d4d4;
+}
+
 .contact_info .contact_info_items .location {
   margin-left: 2px;
 }
@@ -509,6 +522,11 @@ body p {
         text-decoration: none;
         list-style: none;
     }*/
+  /*
+    ul li a:hover{
+        color:rgb(201, 47, 47);
+    }
+*/
 }
 
 .header .logo {
@@ -537,14 +555,18 @@ body p {
 .header ul li {
   display: inline-block;
   padding: 0 15px;
+  padding-top: 2px;
+  padding-right: 14px;
+  letter-spacing: 0.3px;
 }
 
-.header ul li:hover {
-  color: #cc4a4a;
-}
-
-.header ul li a:hover {
+.header li.active {
   color: #c92f2f;
+}
+
+.header li a:not(.active):hover {
+  cursor: pointer;
+  color: #cf7171;
 }
 
 .header ul li a {
@@ -630,10 +652,15 @@ body p {
 .services .services_text .text {
   color: #767e9e;
   text-align: justify;
+<<<<<<< HEAD
+=======
+  margin-bottom: 22px;
+>>>>>>> master
 }
 
 .services .services_text h2 {
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
+  margin-bottom: 20px;
 }
 
 .services .services_grid {
@@ -683,6 +710,10 @@ body p {
   font-size: 14px;
   line-height: 20px;
   text-align: justify;
+<<<<<<< HEAD
+=======
+  overflow: hidden;
+>>>>>>> master
 }
 
 .services .services_grid .idea {

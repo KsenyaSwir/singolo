@@ -139,6 +139,7 @@
 
         .text{
             color: #767e9e;
+            overflow: hidden;
         }
     }
   
@@ -177,6 +178,10 @@
             display: grid;
             grid-template-columns: 50px 300px;
             gap: 30px;
+
+            p{
+                overflow: hidden;
+            }
         }
 
         p{
@@ -184,6 +189,7 @@
            width: 220px;
            font-size: 14px;
            line-height: 20px;
+           overflow: hidden;
         }
 
         .idea{

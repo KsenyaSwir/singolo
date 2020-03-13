@@ -150,6 +150,7 @@
 
 .services .services_text .text {
   color: #767e9e;
+  overflow: hidden;
 }
 
 .services .services_text h2 {
@@ -196,11 +197,16 @@
   gap: 30px;
 }
 
+.services .services_grid .custom_design p {
+  overflow: hidden;
+}
+
 .services .services_grid p {
   letter-spacing: -1px;
   width: 220px;
   font-size: 14px;
   line-height: 20px;
+  overflow: hidden;
 }
 
 .services .services_grid .idea {
