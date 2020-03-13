@@ -57,14 +57,19 @@
         letter-spacing: 0.3px;
     }
 
-    ul li:hover{
-        color:rgb(204, 74, 74);
-    }
-
-    ul li a:hover{
+    li.active{
         color:rgb(201, 47, 47);
     }
 
+    li a:not(.active):hover{
+        cursor: pointer;
+        color:rgb(207, 113, 113);
+    }
+/*
+    ul li a:hover{
+        color:rgb(201, 47, 47);
+    }
+*/
     ul li a {
         -webkit-transition: all 0.3s ease 0s;
         transition: all 0.3s ease 0s;

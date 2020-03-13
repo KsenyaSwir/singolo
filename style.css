@@ -519,6 +519,11 @@ body p {
         text-decoration: none;
         list-style: none;
     }*/
+  /*
+    ul li a:hover{
+        color:rgb(201, 47, 47);
+    }
+*/
 }
 
 .header .logo {
@@ -552,12 +557,13 @@ body p {
   letter-spacing: 0.3px;
 }
 
-.header ul li:hover {
-  color: #cc4a4a;
+.header li.active {
+  color: #c92f2f;
 }
 
-.header ul li a:hover {
-  color: #c92f2f;
+.header li a:not(.active):hover {
+  cursor: pointer;
+  color: #cf7171;
 }
 
 .header ul li a {
