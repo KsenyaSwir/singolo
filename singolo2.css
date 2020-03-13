@@ -159,6 +159,10 @@ html, body {
   background-position: 49% 26%;
 }
 
+.image_grid > :nth-child(13) {
+  display: none;
+}
+
 .about_us {
   padding-bottom: 80px;
   width: 979px;
@@ -228,6 +232,10 @@ html, body {
 
 .about_us_greed .person_1 {
   margin-top: -4px;
+}
+
+.about_us_greed .person_1 h3 {
+  overflow: hidden;
 }
 
 .about_us_greed .person_1 .social_net {

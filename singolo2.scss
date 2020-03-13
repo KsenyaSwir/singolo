@@ -146,7 +146,9 @@ html, body{
             background-position: 49% 26%;
         }
 
-
+        .image_grid >:nth-child(13){
+            display: none;
+       }
 .about_us{
     padding-bottom: 80px;
     width: 979px;
@@ -209,7 +211,9 @@ html, body{
 
     .person_1{
         margin-top: -4px;
-
+        h3{
+            overflow: hidden;
+        }
         .social_net{
             cursor: pointer;
             transition: 1s;
