@@ -445,6 +445,11 @@ body p {
   margin-left: 20px;
 }
 
+.contact_info .contact_info_items a {
+  text-decoration: none;
+  color: #d6d4d4;
+}
+
 .contact_info .contact_info_items .location {
   margin-left: 2px;
 }
@@ -534,6 +539,9 @@ body p {
 .header ul li {
   display: inline-block;
   padding: 0 15px;
+  padding-top: 2px;
+  padding-right: 14px;
+  letter-spacing: 0.3px;
 }
 
 .header ul li:hover {
@@ -627,10 +635,12 @@ body p {
 .services .services_text .text {
   color: #767e9e;
   text-align: justify;
+  margin-bottom: 22px;
 }
 
 .services .services_text h2 {
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
+  margin-bottom: 20px;
 }
 
 .services .services_grid {
