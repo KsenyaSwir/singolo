@@ -621,6 +621,7 @@ body p {
 
 .services .services_text .text {
   color: #767e9e;
+  text-align: justify;
 }
 
 .services .services_text h2 {
