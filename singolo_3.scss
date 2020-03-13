@@ -9,9 +9,12 @@ body{
         font-family: "Lato";
         padding-top: 36px;
         padding-left: 41px;
-
+        text-align: justify;
         h3{
             margin-top: 33px;
+        }
+        p{
+            text-align: justify;
         }
         
     }
@@ -89,7 +92,7 @@ body{
         }
         p{
             width: 300px;
-           
+            text-align: justify;
             font-size: 12px;
             line-height: 22px;
             color: #f0d8d9;

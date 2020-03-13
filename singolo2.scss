@@ -148,12 +148,17 @@ html, body{
 
 
 .about_us{
+
     padding-bottom: 80px;
     width: 979px;
     background-color: #f2f2f2;
     padding-top: 68px;
     padding-left: 42px;
     border-bottom: 5px solid #ffffff;
+
+    .text{
+        
+    }
     h2{
     font-size: 30px;
     line-height: 18px;
@@ -174,6 +179,7 @@ html, body{
     letter-spacing: -0.1px;
     font-size: 18px;
     margin-top: 28px;
+    text-align: justify;
     }
 }
 
@@ -204,11 +210,12 @@ html, body{
         color: #767e9e;  
         font-weight: 400;
         margin-bottom: 6px;
+        text-align: justify;
     }
 
     .person_1{
         margin-top: -4px;
-
+        text-align: justify;
         .social_net{
             cursor: pointer;
             transition: 1s;

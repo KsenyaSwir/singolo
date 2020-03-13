@@ -189,6 +189,7 @@ html, body {
   letter-spacing: -0.1px;
   font-size: 18px;
   margin-top: 28px;
+  text-align: justify;
 }
 
 .about_us_greed {
@@ -223,10 +224,12 @@ html, body {
   color: #767e9e;
   font-weight: 400;
   margin-bottom: 6px;
+  text-align: justify;
 }
 
 .about_us_greed .person_1 {
   margin-top: -4px;
+  text-align: justify;
 }
 
 .about_us_greed .person_1 .social_net {
