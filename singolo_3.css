@@ -18,6 +18,10 @@ body .main_content h3 {
   margin-top: 33px;
 }
 
+body .main_content p {
+  text-align: justify;
+}
+
 body .footer {
   background-color: #2d303a;
   height: 80px;
