@@ -4,6 +4,11 @@ html, body {
   margin-left: 0;
 }
 
+.active {
+  color: #216335;
+  border-color: #441a75;
+}
+
 .portfolio_block {
   width: 1020px;
   background: #2d303a;
@@ -234,7 +239,6 @@ html, body {
 
 .about_us_greed .person_1 {
   margin-top: -4px;
-  text-align: justify;
 }
 
 .about_us_greed .person_1 h3 {
@@ -365,6 +369,7 @@ body p {
 
 .contact_info .contact_text p {
   width: 300px;
+  text-align: justify;
   font-size: 12px;
   line-height: 22px;
   color: #f0d8d9;
@@ -514,13 +519,10 @@ body p {
   font-family: "Lato";
   font-weight: 700;
   text-align: left;
-  /*ul {
-        font-size: 14px;
-        line-height: 16px;
-        color: 
-        #FFFFFF;
-        text-decoration: none;
-        list-style: none;
+  /*
+    li a:not(.active):hover{
+        cursor: pointer;
+        color:rgb(207, 113, 113);
     }*/
   /*
     ul li a:hover{
@@ -560,13 +562,8 @@ body p {
   letter-spacing: 0.3px;
 }
 
-.header li.active {
-  color: #c92f2f;
-}
-
-.header li a:not(.active):hover {
-  cursor: pointer;
-  color: #cf7171;
+.header .active {
+  color: #d84558;
 }
 
 .header ul li a {
@@ -622,6 +619,7 @@ body p {
   -ms-grid-columns: (120px)[6];
       grid-template-columns: repeat(6, 120px);
   gap: 240px;
+  position: relative;
 }
 
 .slider .prev {
@@ -652,10 +650,7 @@ body p {
 .services .services_text .text {
   color: #767e9e;
   text-align: justify;
-<<<<<<< HEAD
-=======
   margin-bottom: 22px;
->>>>>>> master
 }
 
 .services .services_text h2 {
@@ -710,10 +705,6 @@ body p {
   font-size: 14px;
   line-height: 20px;
   text-align: justify;
-<<<<<<< HEAD
-=======
-  overflow: hidden;
->>>>>>> master
 }
 
 .services .services_grid .idea {
@@ -723,5 +714,163 @@ body p {
 
 .clear {
   clear: both;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.black_display {
+  width: 191px;
+  height: 336px;
+  position: absolute;
+  top: 118px;
+  left: 126px;
+  bottom: 385.5px;
+  background-image: url("assets/Slice 1.png");
+}
+
+.phone_vertical {
+  display: none;
+  position: absolute;
+  left: 127px;
+  top: 120px;
+}
+
+.phone_horizontal {
+  display: none;
+  position: absolute;
+  left: 512px;
+  top: 71px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.slide_1 {
+  height: 605px;
+  width: 1020px;
+}
+
+.slide_2 {
+  height: 605px;
+  background-image: url(assets/Slider.png);
+  width: 1020px;
+}
+
+.slider__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+}
+
+.slider__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 50px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
+}
+
+.slider__control_left {
+  left: 0;
+}
+
+.slider__control_right {
+  right: 0;
+}
+
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_right::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__item > div {
+  line-height: 250px;
+  font-size: 100px;
+  text-align: center;
+}
+
+.portfolio__images {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.image {
+  margin-top: 20px;
+}
+
+#message-block {
+  position: absolute;
+  width: 100vw;
+  height: 199vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#message-block.hidden {
+  display: none;
+}
+
+#message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px solid black;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

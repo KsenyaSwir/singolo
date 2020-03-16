@@ -3,6 +3,11 @@ html, body {
   margin-left: 0;
 }
 
+.active {
+  color: #216335;
+  border-color: #441a75;
+}
+
 .portfolio_block {
   width: 1020px;
   background: #2d303a;
@@ -233,7 +238,6 @@ html, body {
 
 .about_us_greed .person_1 {
   margin-top: -4px;
-  text-align: justify;
 }
 
 .about_us_greed .person_1 h3 {

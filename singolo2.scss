@@ -4,6 +4,11 @@ html, body{
     margin-left: 0;
 }
 
+.active {
+    color: #216335;
+    border-color: #441a75;
+}
+
 .portfolio_block{
     width: 1020px;
     background: rgb(45, 48, 58);
@@ -52,9 +57,10 @@ html, body{
             margin-left: 3px;
             margin-right: 4px;
             padding-bottom: 2px;
-           
+            
         }
-    
+     
+        
         ul li:hover{
             color:rgb(204, 74, 74);
         }
@@ -217,13 +223,9 @@ html, body{
 
     .person_1{
         margin-top: -4px;
-<<<<<<< HEAD
-        text-align: justify;
-=======
         h3{
             overflow: hidden;
         }
->>>>>>> master
         .social_net{
             cursor: pointer;
             transition: 1s;
