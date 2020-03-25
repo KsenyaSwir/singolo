@@ -9,8 +9,7 @@ body {
 }
 #wrapper{
     width: 1020px;
-
-overflow: hidden;
+    overflow: hidden;
 }
 .header {
     max-width: 1020px;
@@ -171,6 +170,10 @@ overflow: hidden;
     @media (max-width: 768px){
         height: 595px;
     }
+
+    @media (max-width: 375px){
+        height: 1036px;
+    }
     .services_text{
         font-size: 18px;
         line-height: 18px;
@@ -215,7 +218,7 @@ overflow: hidden;
         }
         @media (max-width: 375px){
             grid-template-columns: 315px;
-            margin: 0 32px;
+            margin: 118px 32px;
         }
         h3{
             margin-top: 20px;

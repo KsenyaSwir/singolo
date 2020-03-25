@@ -236,7 +236,7 @@ html, body {
 
 @media (max-width: 375px) {
   .about_us {
-    height: 1547px;
+    height: 1634px;
   }
 }
 
@@ -267,7 +267,7 @@ html, body {
 @media (max-width: 375px) {
   .about_us p {
     width: 86vw;
-    margin-bottom: 11%;
+    margin-bottom: 14%;
   }
 }
 

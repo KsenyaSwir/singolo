@@ -15,12 +15,24 @@ body .main_content {
   text-align: justify;
 }
 
+@media (max-width: 768px) {
+  body .main_content {
+    padding-left: 9px;
+  }
+}
+
 body .main_content h3 {
   margin-top: 33px;
 }
 
 body .main_content p {
   text-align: justify;
+}
+
+@media (max-width: 768px) {
+  body .main_content p {
+    width: 358px;
+  }
 }
 
 body .footer {
@@ -104,6 +116,7 @@ body p {
         grid-template-columns: 450px;
     -ms-grid-rows: 445px 265px;
         grid-template-rows: 445px 265px;
+    margin-top: 130px;
   }
 }
 
@@ -144,6 +157,12 @@ body p {
 @media (max-width: 768px) {
   .contact_info input {
     width: 442px;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact_info input {
+    width: 315px;
   }
 }
 
@@ -203,6 +222,12 @@ body p {
 @media (max-width: 768px) {
   .contact_info textarea {
     width: 442px;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact_info textarea {
+    width: 315px;
   }
 }
 
