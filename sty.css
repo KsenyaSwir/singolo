@@ -1,0 +1,18 @@
+#home{
+    background-color: brown;
+    overflow: hidden;
+}
+
+#home ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+#home li{
+    list-style: none;
+    margin: 10px;
+    width: 30vw;
+    height: 30vw;
+    background: cornflowerblue;
+}

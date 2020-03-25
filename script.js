@@ -4,6 +4,33 @@ const MENU = document.getElementById('menu');
 const BUTTON = document.getElementById('submit');
 const CLOSE_BUTTON = document.getElementById('close-btn');
 
+
+
+
+document.addEventListener("scroll", onScroll);
+
+function onScroll(event){
+   const currpos =  window.scrollY;
+   const divs = document.querySelectorAll('#wrapper > div');
+   const links = document.querySelectorAll('#menu a');
+
+   console.log(currpos);
+   document.querySelectorAll('#wrapper > div').forEach((el)=>{
+    console.log( el.getAttribute('id'));    
+    el.getAttribute('id');
+
+    if(el.offsetTop <= currpos && el.offsetTop + el.offsetHeight > currpos){
+        links.forEach((a) => {
+            a.classList.remove('active');
+            if(el.getAttribute('id') === a.getAttribute('href').substring(1)){
+                a.classList.add('active');
+            }
+        })
+    }
+
+   });
+}
+
 MENU.querySelectorAll('li');
 
 MENU.addEventListener('click', (event) =>{

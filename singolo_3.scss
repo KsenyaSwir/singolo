@@ -82,7 +82,13 @@ body{
     grid-template-columns: 620px 310px;
     font-size: 12px;
     margin-top: 39px;
-    
+    @media (max-width : 768px){
+        grid-template-columns: 450px 310px;
+     }
+     @media (max-width : 375px){
+        grid-template-columns: 450px;
+        grid-template-rows: 445px 265px;
+     }
     .contact_text{
         h2{
             margin-top: 0;
@@ -117,14 +123,17 @@ body{
         font-family: "Lato";
         font-weight: 400;
         text-align: left;     
+        @media (max-width : 768px){
+            width: 442px;
+          }
         
     }
     form{
         position: relative;
         button{
             position: absolute;
-            top: 320px;
-            left: 647px;
+            top: 376px;
+            left: 2px;
             color: rgb(214, 212, 212); /* цвет текста */
             text-decoration: none; /* убирать подчёркивание у ссылок */
             user-select: none; /* убирать выделение текста */
@@ -157,6 +166,9 @@ body{
         font-weight: 400;
         text-align: left;
         resize: none; 
+        @media (max-width : 768px){
+            width: 442px;
+          }
         
     }
     textarea[placeholder]{
@@ -179,6 +191,7 @@ body{
         }
         img{
             float: left;
+            width: auto;
         }
 
         .mail img{

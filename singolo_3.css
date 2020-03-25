@@ -91,6 +91,22 @@ body p {
   margin-top: 39px;
 }
 
+@media (max-width: 768px) {
+  .contact_info {
+    -ms-grid-columns: 450px 310px;
+        grid-template-columns: 450px 310px;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact_info {
+    -ms-grid-columns: 450px;
+        grid-template-columns: 450px;
+    -ms-grid-rows: 445px 265px;
+        grid-template-rows: 445px 265px;
+  }
+}
+
 .contact_info .contact_text h2 {
   margin-top: 0;
   padding-left: 20px;
@@ -125,14 +141,20 @@ body p {
   text-align: left;
 }
 
+@media (max-width: 768px) {
+  .contact_info input {
+    width: 442px;
+  }
+}
+
 .contact_info form {
   position: relative;
 }
 
 .contact_info form button {
   position: absolute;
-  top: 320px;
-  left: 647px;
+  top: 376px;
+  left: 2px;
   color: #d6d4d4;
   /* цвет текста */
   text-decoration: none;
@@ -178,6 +200,12 @@ body p {
   resize: none;
 }
 
+@media (max-width: 768px) {
+  .contact_info textarea {
+    width: 442px;
+  }
+}
+
 .contact_info textarea[placeholder] {
   padding-left: 10px;
   color: #f48c8f;
@@ -203,6 +231,7 @@ body p {
 
 .contact_info .contact_info_items img {
   float: left;
+  width: auto;
 }
 
 .contact_info .contact_info_items .mail img {
