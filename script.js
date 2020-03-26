@@ -3,8 +3,8 @@
 const MENU = document.getElementById('menu');
 const BUTTON = document.getElementById('submit');
 const CLOSE_BUTTON = document.getElementById('close-btn');
-
-
+const MENU_BURGER = document.getElementById('menu_burger');
+const BURGER = document.getElementById('burger');
 
 
 document.addEventListener("scroll", onScroll);
@@ -37,6 +37,23 @@ MENU.addEventListener('click', (event) =>{
     MENU.querySelectorAll('li a').forEach(el => el.classList.remove('active'));
     event.target.classList.add('active');
 });
+
+
+function Burger_Fun(){
+if(BURGER.classList.contains("active")){
+  console.log(BURGER.classList);
+  BURGER.classList.remove('active');
+  MENU_BURGER.style.display = "none";
+  
+}
+else{
+  console.log(BURGER.classList);
+  BURGER.classList.add('active');
+  BURGER.classList.add('menu_burger');
+  
+  MENU_BURGER.style.display = "block";
+}
+}
 
 function myFunction() {
    /* var element = document.getElementById("phone_vertical");
