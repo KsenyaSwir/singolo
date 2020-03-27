@@ -9,7 +9,7 @@ html, body {
 }
 
 .portfolio_block {
-  width: 1020px;
+  width: 100vw;
   background: #2d303a;
   font-family: "Lato";
   text-align: left;
@@ -29,7 +29,7 @@ html, body {
 }
 
 .portfolio_block p {
-  width: 940px;
+  width: 89vw;
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
@@ -41,11 +41,29 @@ html, body {
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  .portfolio_block p {
+    margin-left: 11px;
+  }
+}
+
 .portfolio_block nav {
   font-family: "Lato";
   font-size: 11px;
   color: #767e9e;
   padding-right: 27px;
+}
+
+@media (max-width: 768px) {
+  .portfolio_block nav {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 375px) {
+  .portfolio_block nav {
+    margin-top: 20%;
+  }
 }
 
 .portfolio_block nav ul li {
@@ -87,6 +105,7 @@ html, body {
 @media (max-width: 768px) {
   .portfolio {
     width: 100vw;
+    padding-bottom: 12px;
   }
 }
 
@@ -234,9 +253,15 @@ html, body {
   border-bottom: 5px solid #ffffff;
 }
 
+@media (max-width: 768px) {
+  .about_us {
+    width: 94vw;
+  }
+}
+
 @media (max-width: 375px) {
   .about_us {
-    height: 1634px;
+    height: 1740px;
   }
 }
 
@@ -264,6 +289,12 @@ html, body {
   text-align: justify;
 }
 
+@media (max-width: 768px) {
+  .about_us p {
+    width: 92vw;
+  }
+}
+
 @media (max-width: 375px) {
   .about_us p {
     width: 86vw;
@@ -285,10 +316,12 @@ html, body {
 
 @media (max-width: 768px) {
   .about_us_greed {
-    -ms-grid-columns: (30vw)[3];
-        grid-template-columns: repeat(3, 30vw);
+    -ms-grid-columns: (29vw)[3];
+        grid-template-columns: repeat(3, 29vw);
     -ms-grid-rows: 220px 127px;
         grid-template-rows: 220px 127px;
+    margin-top: 61px;
+    margin-left: -15px;
   }
 }
 
@@ -302,6 +335,7 @@ html, body {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 181px;
+    margin-top: 72%;
   }
 }
 
@@ -342,7 +376,7 @@ html, body {
 
 @media (max-width: 768px) {
   .about_us_greed p {
-    width: 209px;
+    width: 30vw;
   }
 }
 
@@ -351,9 +385,15 @@ html, body {
 }
 
 @media (max-width: 375px) {
+  .about_us_greed .person_1 p {
+    width: 87vw;
+  }
+}
+
+@media (max-width: 375px) {
   .about_us_greed .person_1 {
-    margin-top: -118%;
-    margin-bottom: 135%;
+    margin-top: -313%;
+    margin-bottom: 357%;
   }
 }
 

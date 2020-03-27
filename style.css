@@ -10,7 +10,7 @@ html, body {
 }
 
 .portfolio_block {
-  width: 1020px;
+  width: 100vw;
   background: #2d303a;
   font-family: "Lato";
   text-align: left;
@@ -30,7 +30,7 @@ html, body {
 }
 
 .portfolio_block p {
-  width: 940px;
+  width: 89vw;
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
@@ -42,11 +42,29 @@ html, body {
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  .portfolio_block p {
+    margin-left: 11px;
+  }
+}
+
 .portfolio_block nav {
   font-family: "Lato";
   font-size: 11px;
   color: #767e9e;
   padding-right: 27px;
+}
+
+@media (max-width: 768px) {
+  .portfolio_block nav {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 375px) {
+  .portfolio_block nav {
+    margin-top: 20%;
+  }
 }
 
 .portfolio_block nav ul li {
@@ -88,6 +106,7 @@ html, body {
 @media (max-width: 768px) {
   .portfolio {
     width: 100vw;
+    padding-bottom: 12px;
   }
 }
 
@@ -235,9 +254,15 @@ html, body {
   border-bottom: 5px solid #ffffff;
 }
 
+@media (max-width: 768px) {
+  .about_us {
+    width: 94vw;
+  }
+}
+
 @media (max-width: 375px) {
   .about_us {
-    height: 1634px;
+    height: 1740px;
   }
 }
 
@@ -265,6 +290,12 @@ html, body {
   text-align: justify;
 }
 
+@media (max-width: 768px) {
+  .about_us p {
+    width: 92vw;
+  }
+}
+
 @media (max-width: 375px) {
   .about_us p {
     width: 86vw;
@@ -286,10 +317,12 @@ html, body {
 
 @media (max-width: 768px) {
   .about_us_greed {
-    -ms-grid-columns: (30vw)[3];
-        grid-template-columns: repeat(3, 30vw);
+    -ms-grid-columns: (29vw)[3];
+        grid-template-columns: repeat(3, 29vw);
     -ms-grid-rows: 220px 127px;
         grid-template-rows: 220px 127px;
+    margin-top: 61px;
+    margin-left: -15px;
   }
 }
 
@@ -303,6 +336,7 @@ html, body {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 181px;
+    margin-top: 72%;
   }
 }
 
@@ -343,7 +377,7 @@ html, body {
 
 @media (max-width: 768px) {
   .about_us_greed p {
-    width: 209px;
+    width: 30vw;
   }
 }
 
@@ -352,9 +386,15 @@ html, body {
 }
 
 @media (max-width: 375px) {
+  .about_us_greed .person_1 p {
+    width: 87vw;
+  }
+}
+
+@media (max-width: 375px) {
   .about_us_greed .person_1 {
-    margin-top: -118%;
-    margin-bottom: 135%;
+    margin-top: -313%;
+    margin-bottom: 357%;
   }
 }
 
@@ -416,6 +456,7 @@ body .main_content {
 @media (max-width: 768px) {
   body .main_content {
     padding-left: 9px;
+    width: 100vw;
   }
 }
 
@@ -429,7 +470,7 @@ body .main_content p {
 
 @media (max-width: 768px) {
   body .main_content p {
-    width: 358px;
+    width: 96vw;
   }
 }
 
@@ -505,6 +546,7 @@ body p {
   .contact_info {
     -ms-grid-columns: 450px 310px;
         grid-template-columns: 450px 310px;
+    margin-top: 60px;
   }
 }
 
@@ -515,6 +557,12 @@ body p {
     -ms-grid-rows: 445px 265px;
         grid-template-rows: 445px 265px;
     margin-top: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact_info .contact_text {
+    margin-left: 17px;
   }
 }
 
@@ -538,6 +586,12 @@ body p {
   letter-spacing: -0.1px;
 }
 
+@media (max-width: 768px) {
+  .contact_info .contact_text p {
+    width: 30vw;
+  }
+}
+
 .contact_info input {
   border: none;
   margin-bottom: 15px;
@@ -554,13 +608,13 @@ body p {
 
 @media (max-width: 768px) {
   .contact_info input {
-    width: 442px;
+    width: 60vw;
   }
 }
 
 @media (max-width: 375px) {
   .contact_info input {
-    width: 315px;
+    width: 87vw;
   }
 }
 
@@ -619,7 +673,7 @@ body p {
 
 @media (max-width: 768px) {
   .contact_info textarea {
-    width: 442px;
+    width: 60vw;
   }
 }
 
@@ -770,6 +824,7 @@ body {
     top: 23px;
     left: 22px;
     margin-left: 0px;
+    position: static;
   }
 }
 
@@ -801,6 +856,12 @@ body {
 @media (max-width: 768px) {
   .header .logo {
     margin: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .header .logo {
+    margin-left: -10px;
   }
 }
 
@@ -845,13 +906,19 @@ body {
   position: relative;
 }
 
+@media (max-width: 375px) {
+  .slider {
+    height: 220px;
+  }
+}
+
 .slider .slider__control_right {
-  right: 46.5%;
+  right: -0.5%;
 }
 
 @media (max-width: 768px) {
   .slider .slider__control_right {
-    right: 2.5%;
+    right: -0.5%;
   }
 }
 
@@ -889,6 +956,14 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .slider .vertical_phone {
+    width: 210px;
+    margin-left: 40px;
+    margin-top: 5px;
+  }
+}
+
 .slider .horiz_phone {
   padding-top: 70px;
 }
@@ -896,6 +971,12 @@ body {
 @media (max-width: 768px) {
   .slider .horiz_phone {
     width: 417px;
+  }
+}
+
+@media (max-width: 375px) {
+  .slider .horiz_phone {
+    width: 210px;
   }
 }
 
@@ -914,6 +995,13 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .slider .phone {
+    gap: 4px;
+    margin-top: 0px;
+  }
+}
+
 .slider .prev {
   float: left;
   cursor: pointer;
@@ -925,6 +1013,7 @@ body {
   background-color: #f2f2f2;
   padding-top: 1px;
   border-bottom: 5px solid white;
+  padding-bottom: 60px;
 }
 
 @media (max-width: 768px) {
@@ -951,6 +1040,13 @@ body {
   line-height: 30px;
 }
 
+@media (max-width: 768px) {
+  .services .services_text {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
 .services .services_text .text {
   color: #767e9e;
   text-align: justify;
@@ -959,7 +1055,7 @@ body {
 
 @media (max-width: 768px) {
   .services .services_text .text {
-    width: 92vw;
+    width: 82vw;
   }
 }
 
@@ -984,9 +1080,9 @@ body {
 
 @media (max-width: 768px) {
   .services .services_grid {
-    -ms-grid-columns: 315px 323px;
-        grid-template-columns: 315px 323px;
-    margin: 0 40px;
+    -ms-grid-columns: 47vw 323px;
+        grid-template-columns: 47vw 323px;
+    margin: 74px 4px;
   }
 }
 
@@ -994,7 +1090,7 @@ body {
   .services .services_grid {
     -ms-grid-columns: 315px;
         grid-template-columns: 315px;
-    margin: 118px 32px;
+    margin: 190px 14px;
   }
 }
 
@@ -1027,10 +1123,16 @@ body {
 
 .services .services_grid p {
   letter-spacing: -1px;
-  width: 220px;
+  width: 29vw;
   font-size: 14px;
   line-height: 20px;
   text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .services .services_grid p {
+    font-size: 12px;
+  }
 }
 
 .services .services_grid .idea {
@@ -1082,6 +1184,12 @@ body {
   height: 605px;
   background-image: url(assets/Slider.png);
   width: 1020px;
+}
+
+@media (max-width: 375px) {
+  .slide_2 {
+    background-size: 100vw 220px;
+  }
 }
 
 .slider__wrapper {
