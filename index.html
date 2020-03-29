@@ -12,32 +12,86 @@
 <body>
     
         <div class = "header">
+            <div class="menu_burger" id="menu_burger">
+                <nav id="bur_nav">
+                    <ul id = "menu">
+                        <li >
+                            <a href="#" class = "active">home</a>
+                        </li>
+                        <li>
+                            <a href="#services">services</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" >portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#about_us">about</a>
+                        </li>
+                        <li>
+                            <a href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="assets/Burger-menu-icon.png" class="burger" id="burger" onclick="Burger_Fun()">
             
             <h1 class="logo">
                SINGOLO <div class="star">*</div>
             </h1>
            
-            <nav>
-                <ul>
-                    <li class = "active">
-                        home
+            <nav >
+                <ul id = "menu">
+                    <li >
+                        <a href="#" class = "active">home</a>
                     </li>
                     <li>
-                        <a href="#">services</a>
+                        <a href="#services">services</a>
                     </li>
                     <li>
-                        <a href="#">portfolio</a>
+                        <a href="#portfolio" >portfolio</a>
                     </li>
                     <li>
-                        <a href="#">about</a>
+                        <a href="#about_us">about</a>
                     </li>
                     <li>
-                        <a href="#">contact</a>
+                        <a href="#contact">contact</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div class = "slider">
+<section id="wrapper"> 
+<!------------------------------------------------>
+<div class="slider" id="slider">
+    <div class="slider__wrapper">
+      <div class="slider__item">
+        <div class = "slide_1">
+            <div class = "phone" id = "phone_id" >
+              
+                <img src = "assets/iPhone Vertical.png" id="vertical_phone" class="vertical_phone"  onclick="myFunction()">
+                <div class = "phone_vertical" id = "phone_vertical">
+                <img src="assets/Slice 1.png">
+               </div>
+                <!-- <div class = "phone_1"> -->
+                <img src = "assets/iPhone Horizontal.png" id = "horiz_phone" class="horiz_phone" onclick="myFunction_2()">
+                <div class = "phone_horizontal" id = "phone_horizontal">
+                <img src="assets/Slice 1.png">
+                </div>
+                
+            <!-- </div> -->
+            </div>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div class = "slide_2"></div>
+      </div>
+     
+    </div>
+    <a class="slider__control slider__control_left" href="#" role="button"></a>
+    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+  </div>
+  
+<!------------------------------------------------>
+        <!-- <div class = "slider">
             <div class = "slider_tools">
                 <div class = "prev">
                     <img src = "assets/chev.png">
@@ -50,9 +104,8 @@
                 <img src = "assets/iPhone Vertical.png" class="vertical_phone">
                 <img src = "assets/iPhone Horizontal.png" class="horiz_phone">
             </div>
-        </div>
-        <div class = "clear"></div>
-        <div class = "services">
+        </div> -->
+        <div class = "services" id="services"><a name="service">
             <div class = "services_text">
                 <h2>Our Services</h2>
                 <p class = "text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -106,31 +159,48 @@
 
         <!--  -->
         
-        <div class = "portfolio_block">
+        <div class = "portfolio_block"><a name="portfolio">
         
             <h1>Portfolio</h1>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
            
-            <nav>
-                <ul>
-                    <li>
-                        All
+            <nav ><a name = "portfolio"></a>
+               <ul id = 'men' onclick="randomImages(event)">
+                    <li class = "active">
+                        <a href="#portfolio" >All</a>
                     </li>
                     <li>
-                        <a href="#">Wed Design</a>
+                        <a href="#portfolio">Wed Design</a>
                     </li>
                     <li>
-                        <a href="#">Grafic Design</a>
+                        <a href="#portfolio">Grafic Design</a>
                     </li>
                     <li>
-                        <a href="#">Artwork</a>
+                        <a href="#portfolio">Artwork</a>
                     </li>
                 </ul>
+               
             </nav>
         </div>
-        <div class = "clear"></div>
-        <div class = "portfolio">
-            <div class = "image_grid">
+        
+        <div class = "portfolio" id="portfolio">
+            <div class="portfolio__images" id="portfolio__images">
+                <img class="image" src="assets/Project1.png">
+                <img class="image" src="assets/Project2.png">
+                <img class="image" src="assets/Layer3.png">
+                <img class="image" src="assets/Project4.png">
+                <img class="image" src="assets/Project5.png">
+                <img class="image" src="assets/Project6.png">
+                <img class="image" src="assets/Layer7.png">
+                <img class="image" src="assets/Layer8.png">
+                <img class="image" src="assets/Project9.png">
+                <img class="image" src="assets/Project10.png">
+                <img class="image" src="assets/Project11.png">
+                <img class="image" src="assets/Project12.png">
+            </div>
+
+
+            <!-- <div class = "image_grid" id = "image_grid">
                 <div class = "img_1"></div>
                 <div class = "img_2"></div>
                 <div class = "img_3"></div>
@@ -143,9 +213,9 @@
                 <div class = "img_10"></div>
                 <div class = "img_11"></div>
                 <div class = "img_12"></div>
-            </div>
+            </div> -->
         </div>
-        <div class = "about_us">
+        <div class = "about_us" id="about_us"><a name="about">
             <div class = "text">
                 <h2>About Us</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -190,7 +260,7 @@
         </div>
 
         <!--  -->
-        <div class = "main_content">
+        <div class = "main_content" id = "contact">
             <div class = "text_blank">
             <h3>Get a Quote</h3>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -202,10 +272,16 @@
                 <input type = "email" name = "fmail" id = "fmail" value = "Email(Required)" required><br>
                 
                 <input type = "text" name = "ftext" id = "ftext" value = "Subject" required>
-                <textarea  placeholder = "Describe your progect in detail..."></textarea>   
+                <textarea id = "description" placeholder = "Describe your progect in detail..."></textarea>   
                 <button type="submit" id="submit" class="submit-btn">Submit</button>
+            <div id="message-block" class="hidden">
+                <p> Письмо отправлено <br>Theme:<span id="theme"></span><br><span id="descr_theme"></span></p>
+                <br>
+                <button id="close-btn">OK</button>
+            </div>
+            
             </form>
-            <div class = "contact_text">
+            <div class = "contact_text" ><a name="contact">
                 <h2>Contact Information</h2>
                 <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver-ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
                 <div class = "contact_info_items">
@@ -238,5 +314,7 @@
                 <img src = "assets/linkedin.png">
             </div>
           </div>
+          </section>
+          <script src = "script.js"></script>
 </body>
 </html>

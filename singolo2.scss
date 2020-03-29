@@ -4,8 +4,13 @@ html, body{
     margin-left: 0;
 }
 
+.active {
+    color: #216335;
+    border-color: #441a75;
+}
+
 .portfolio_block{
-    width: 1020px;
+    width: 100vw;
     background: rgb(45, 48, 58);
     font-family: "Lato";
     text-align: left;
@@ -23,7 +28,7 @@ html, body{
         margin-top: 0px;
         }
     p{
-        width: 940px;
+        width: 89vw;
         font-size: 18px;
         line-height: 30px;
         color: #767e9e;
@@ -33,6 +38,9 @@ html, body{
         letter-spacing: -0.23px;
         padding-bottom: 0px;
         margin-bottom: 30px;
+        @media (max-width: 768px){
+        margin-left: 11px;
+        }
     }
 
     nav {
@@ -40,8 +48,12 @@ html, body{
         font-size: 11px;
         color: #767e9e;;
         padding-right: 27px;
-
-        
+        @media (max-width: 768px){
+            margin-top: 5%; 
+        }
+        @media (max-width: 375px){
+            margin-top: 20%; 
+        }
         ul li {
             
             font-size: 13px;
@@ -52,9 +64,10 @@ html, body{
             margin-left: 3px;
             margin-right: 4px;
             padding-bottom: 2px;
-           
+            
         }
-    
+     
+        
         ul li:hover{
             color:rgb(204, 74, 74);
         }
@@ -76,9 +89,13 @@ html, body{
 }
 
 .portfolio{
-    width: 1020px;
+    width: 63.75rem;
     background-color: rgb(45, 48, 58);
     border-bottom: 5px solid #323746;
+    @media ( max-width : 768px){
+        width: 100vw;
+        padding-bottom: 12px;
+    }
     img{
         width: 220px;
         height: 185px;
@@ -149,7 +166,60 @@ html, body{
         .image_grid >:nth-child(13){
             display: none;
        }
+
+#portfolio__images{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 1020px){
+    
+        img{
+            margin: 10px;
+            width: 21vw;
+            height: auto;
+        }
+        img::after{
+            content:"";
+            float: left;
+            padding-top: 100%;
+        }
+    }
+    
+    @media ( max-width : 768px){
+
+        img{
+            flex: 1 0 24%;
+            height: auto;
+        }
+        /*img::after{
+            content:"";
+            float: left;
+            padding-top: 100%;
+        }*/
+        .portfolio_images{
+            justify-content: stretch;
+        }
+    }
+    
+    @media (max-width : 375px){
+        img{
+            
+            flex: 1 0 30%;
+        }
+    }
+    
+    
+
+}
+
 .about_us{
+    @media (max-width : 768px){
+        width: 94vw;
+    }
+    @media (max-width : 375px){
+        height: 1740px;
+    }
 
     padding-bottom: 80px;
     width: 979px;
@@ -171,6 +241,9 @@ html, body{
     letter-spacing: 0.3px;
     }
     p{
+        @media (max-width : 768px){
+            width: 92vw;
+        }
     width: 940px;
     height: 57px;
     font-size: 18px;
@@ -182,6 +255,10 @@ html, body{
     font-size: 18px;
     margin-top: 28px;
     text-align: justify;
+    @media (max-width : 375px){
+        width: 86vw;
+        margin-bottom: 14%;
+    }
     }
 }
 
@@ -192,9 +269,29 @@ html, body{
     grid-template-rows: 303px 127px;
     grid-column-gap: 20px;
     margin-top: 50px;
+    @media (max-width : 768px){
+        grid-template-columns: repeat(3, 29vw);
+        grid-template-rows: 220px 127px;
+        margin-top: 61px;
+        margin-left: -15px;
+    }
+
+
+    @media (max-width : 375px){
+        display: flex;
+        flex-direction: column;
+        gap:181px;
+        margin-top: 72%;
+    }
 
     img{
         width: 300px;
+        @media (max-width : 768px){
+            width: 30vw;
+        }
+        @media (max-width : 375px){
+            width: 300px;
+        }
     }
 
     h3{
@@ -213,20 +310,37 @@ html, body{
         font-weight: 400;
         margin-bottom: 6px;
         text-align: justify;
+    @media (max-width : 768px){
+        width: 30vw;
     }
-
+    }
     .person_1{
         margin-top: -4px;
-<<<<<<< HEAD
-        text-align: justify;
-=======
+        p{
+            @media (max-width : 375px){
+                width: 87vw;
+               
+            }
+        }
+        @media (max-width : 375px){
+            margin-top: -313%;
+
+            margin-bottom: 357%;
+           
+        }
         h3{
             overflow: hidden;
         }
->>>>>>> master
         .social_net{
             cursor: pointer;
             transition: 1s;
+
+            @media (max-width : 768px){
+               margin-top: 11%;
+             }
+             @media (max-width : 375px){
+                margin-top: 18px;
+              }
             img{
                 width: 34px;
             }
@@ -242,3 +356,4 @@ html, body{
         }
     }
 }
+

@@ -3,8 +3,13 @@ html, body {
   margin-left: 0;
 }
 
+.active {
+  color: #216335;
+  border-color: #441a75;
+}
+
 .portfolio_block {
-  width: 1020px;
+  width: 100vw;
   background: #2d303a;
   font-family: "Lato";
   text-align: left;
@@ -24,7 +29,7 @@ html, body {
 }
 
 .portfolio_block p {
-  width: 940px;
+  width: 89vw;
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
@@ -36,11 +41,29 @@ html, body {
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  .portfolio_block p {
+    margin-left: 11px;
+  }
+}
+
 .portfolio_block nav {
   font-family: "Lato";
   font-size: 11px;
   color: #767e9e;
   padding-right: 27px;
+}
+
+@media (max-width: 768px) {
+  .portfolio_block nav {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 375px) {
+  .portfolio_block nav {
+    margin-top: 20%;
+  }
 }
 
 .portfolio_block nav ul li {
@@ -74,9 +97,16 @@ html, body {
 }
 
 .portfolio {
-  width: 1020px;
+  width: 63.75rem;
   background-color: #2d303a;
   border-bottom: 5px solid #323746;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    width: 100vw;
+    padding-bottom: 12px;
+  }
 }
 
 .portfolio img {
@@ -163,6 +193,57 @@ html, body {
   display: none;
 }
 
+#portfolio__images {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1020px) {
+  #portfolio__images img {
+    margin: 10px;
+    width: 21vw;
+    height: auto;
+  }
+  #portfolio__images img::after {
+    content: "";
+    float: left;
+    padding-top: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #portfolio__images {
+    /*img::after{
+            content:"";
+            float: left;
+            padding-top: 100%;
+        }*/
+  }
+  #portfolio__images img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 24%;
+            flex: 1 0 24%;
+    height: auto;
+  }
+  #portfolio__images .portfolio_images {
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+}
+
+@media (max-width: 375px) {
+  #portfolio__images img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 30%;
+            flex: 1 0 30%;
+  }
+}
+
 .about_us {
   padding-bottom: 80px;
   width: 979px;
@@ -170,6 +251,18 @@ html, body {
   padding-top: 68px;
   padding-left: 42px;
   border-bottom: 5px solid #ffffff;
+}
+
+@media (max-width: 768px) {
+  .about_us {
+    width: 94vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .about_us {
+    height: 1740px;
+  }
 }
 
 .about_us h2 {
@@ -196,6 +289,19 @@ html, body {
   text-align: justify;
 }
 
+@media (max-width: 768px) {
+  .about_us p {
+    width: 92vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .about_us p {
+    width: 86vw;
+    margin-bottom: 14%;
+  }
+}
+
 .about_us_greed {
   font-family: "Lato";
   display: -ms-grid;
@@ -208,8 +314,45 @@ html, body {
   margin-top: 50px;
 }
 
+@media (max-width: 768px) {
+  .about_us_greed {
+    -ms-grid-columns: (29vw)[3];
+        grid-template-columns: repeat(3, 29vw);
+    -ms-grid-rows: 220px 127px;
+        grid-template-rows: 220px 127px;
+    margin-top: 61px;
+    margin-left: -15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .about_us_greed {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 181px;
+    margin-top: 72%;
+  }
+}
+
 .about_us_greed img {
   width: 300px;
+}
+
+@media (max-width: 768px) {
+  .about_us_greed img {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .about_us_greed img {
+    width: 300px;
+  }
 }
 
 .about_us_greed h3 {
@@ -231,9 +374,27 @@ html, body {
   text-align: justify;
 }
 
+@media (max-width: 768px) {
+  .about_us_greed p {
+    width: 30vw;
+  }
+}
+
 .about_us_greed .person_1 {
   margin-top: -4px;
-  text-align: justify;
+}
+
+@media (max-width: 375px) {
+  .about_us_greed .person_1 p {
+    width: 87vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .about_us_greed .person_1 {
+    margin-top: -313%;
+    margin-bottom: 357%;
+  }
 }
 
 .about_us_greed .person_1 h3 {
@@ -244,6 +405,18 @@ html, body {
   cursor: pointer;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .about_us_greed .person_1 .social_net {
+    margin-top: 11%;
+  }
+}
+
+@media (max-width: 375px) {
+  .about_us_greed .person_1 .social_net {
+    margin-top: 18px;
+  }
 }
 
 .about_us_greed .person_1 .social_net img {
